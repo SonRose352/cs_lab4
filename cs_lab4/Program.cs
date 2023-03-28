@@ -1,0 +1,13 @@
+﻿Vector v = new Vector();
+v.input();
+v.append(8);
+Console.WriteLine($"Массив после добавление 8 в конец: {v.ToString()}");
+v.remove();
+Console.WriteLine($"Массив после удаления последнего элемента: {v.ToString()}");
+v.insert(8, 3);
+Console.WriteLine($"Масиив после добавление 8 по индексу 3: {v.ToString()}");
+v.pop(3);
+Console.WriteLine($"Массив после удаления элемента с индексом 3: {v.ToString()}");
+v.delete(8);
+Console.WriteLine($"Массив после удаления всех 8-ок: {v.ToString()}");
+Console.WriteLine($"Индекс максимального элемента: {v.max_elem_index()}");
